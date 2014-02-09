@@ -1,3 +1,4 @@
+
 # MySQL.  Versions 4.1 and 5.0 are recommended.
 #
 # Install the MYSQL driver
@@ -11,10 +12,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  username: gameday 
-  password: gameday
+  username: ******* 
+  password: ******* 
   database: gameday_d 
-  host: mysqlhost.cloudapp.net
+  host: ************* 
   port: 3306
 
 # Warning: The database defined as "test" will be erased and
@@ -23,17 +24,17 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  username: gameday 
-  password: gameday
+  username: *******  
+  password: *******
   database: gameday_t
-  host: mysqlhost.cloudapp.net
+  host: *************
   port: 3306
 
 production:
   adapter: mysql2
   encoding: utf8
-  username: gameday 
-  password: gameday
+  username: ******* 
+  password: ******* 
   database: gameday_p
-  host: mysqlhost.cloudapp.net
+  host: *************
   port: 3306
