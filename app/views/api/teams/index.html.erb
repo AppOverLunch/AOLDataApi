@@ -1,0 +1,25 @@
+<h1>Listing api_teams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @api_teams.each do |api_team| %>
+      <tr>
+        <td><%= link_to 'Show', api_team %></td>
+        <td><%= link_to 'Edit', edit_api_team_path(api_team) %></td>
+        <td><%= link_to 'Destroy', api_team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Team', new_api_team_path %>
