@@ -5,9 +5,7 @@ class Api::StadiaController < ApplicationController
   # GET /api/stadia.json
   def index
     @api_stadia = Api::Stadium.all
-    respond_to do |format|
-      format.json
-    end
+    render json: @api_stadia
   end
 
   # GET /api/stadia/1

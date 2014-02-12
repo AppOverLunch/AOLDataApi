@@ -4,7 +4,8 @@ class Api::TeamsController < ApplicationController
   # GET /api/teams
   # GET /api/teams.json
   def index
-    @api_teams = Api::Team.all
+    @api_teams = Team.all
+    render json: @api_teams
   end
 
   # GET /api/teams/1
@@ -15,6 +16,7 @@ class Api::TeamsController < ApplicationController
   # GET /api/teams/new
   def new
     @api_team = Api::Team.new
+    render json: @api_team
   end
 
   # GET /api/teams/1/edit

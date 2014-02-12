@@ -1,10 +1,10 @@
 AOLDataApi::Application.routes.draw do
   namespace :api do
-    resources :teams
+    resources :teams, defaults: {format: :json}
   end
 
   namespace :api do
-    resources :stadia
+    resources :stadia, defaults: {format: :json}
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
